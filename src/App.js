@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Title>Redux Class Connection Todo List</Title>
+        <Title>Redux Connect Todo List</Title>
         <Filters />
         <AddTodo />
         <VisibleTodolist />

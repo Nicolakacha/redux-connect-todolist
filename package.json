@@ -1,5 +1,5 @@
 {
-  "name": "redux-hooks-todolist",
+  "name": "redux-connect-todolist",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://nicolakacha.github.io/redux-connect-todolist",
