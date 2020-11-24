@@ -10,6 +10,10 @@ class VisibleTodolist extends Component {
     );
   };
 
+  componentDidMount = () => {
+    this.props.getTodosState();
+  };
+
   render() {
     const {
       todoState,
@@ -20,18 +24,17 @@ class VisibleTodolist extends Component {
 
     const showedTodos = todoState.todos.filter((todo) => {
       switch (filterState) {
-        case ALL: {
+        case ALL:
           return todo;
-        }
-        case COMPLETED: {
+
+        case COMPLETED:
           return todo.isDone === true;
-        }
-        case UNCOMPLETED: {
+
+        case UNCOMPLETED:
           return todo.isDone === false;
-        }
-        default: {
+
+        default:
           return todo;
-        }
       }
     });
 
