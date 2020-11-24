@@ -16,9 +16,7 @@ class AddTodo extends Component {
     this.state = { input: '' };
   }
 
-  updateInput = (e) => {
-    this.setState({ input: e.target.value });
-  };
+  updateInput = (e) => this.setState({ input: e.target.value });
 
   addTodo = (e) => {
     if (this.state.input.trim() !== '' && e.key === 'Enter') {
